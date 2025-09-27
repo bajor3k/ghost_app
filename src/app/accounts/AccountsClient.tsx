@@ -102,11 +102,10 @@ export default function AccountsClient() {
 
         <section className="mb-2">
           <p className="text-2xl font-bold">$10,182.17</p>
-          <div className="row-compact flex items-center gap-4 text-xs !py-1">
+          <div className="row-compact flex items-center text-xs !py-1">
              <p className={cn("value-compact", currentReturn.isPositive ? "text-up" : "text-down")}>
               {currentReturn.isPositive ? '+' : ''}${currentReturn.amount.toFixed(2)} ({currentReturn.isPositive ? '+' : ''}{currentReturn.percent.toFixed(2)}%)
             </p>
-            <p className="label-compact">{activeTimeframe}</p>
           </div>
         </section>
 
